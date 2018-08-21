@@ -17,7 +17,6 @@ namespace Inspector
                 db.Database.EnsureCreated();
                 db.Database.Migrate();
             }
-
         }
         
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -34,6 +33,8 @@ namespace Inspector
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
 
+            app.UseExceptionHandler();
+            app.UseJsonException();
             app.UseMvc();
         }
     }

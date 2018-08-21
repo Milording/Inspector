@@ -25,16 +25,4 @@ namespace Inspector
         public int Id { get; set; }
         public string InspectionLink { get; set; }
     }
-
-    public class LightSourceState
-    {
-        public int Id { get; set; }
-        public DateTime FixationTime { get; set; }
-
-        public LightSourceState(int id, DateTime fixationTime)
-        {
-            Id = id;
-            FixationTime = fixationTime;
-        }
-    }
 }

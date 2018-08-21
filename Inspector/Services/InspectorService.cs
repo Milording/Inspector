@@ -13,7 +13,7 @@ namespace Inspector
     public class InspectorService :  IHostedService
     {
         private readonly IServiceScopeFactory _scopeFactory;
-        private CrontabSchedule _schedule;
+        private readonly CrontabSchedule _schedule;
         private DateTime _nextRun;
 
         // Every one minute;
